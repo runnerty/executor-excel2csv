@@ -22,7 +22,7 @@
           "on_end": [
             {
               "id": "console_default",
-              "message": "@GETDATE('YYYY-MM-DD HH:mm:ss') END: PROCESS @GV(PROCESS_ID)\nCOUNTROWS: @GV(PROCESS_EXEC_DB_COUNTROWS)\nAFFECTEDROWS: @GV(PROCESS_EXEC_DB_AFFECTEDROWS)\nFIRSTROW_NAME:@GV(PROCESS_EXEC_DB_FIRSTROW_NAME)\nDATA_OUTPUT:@GV(PROCESS_EXEC_DATA_OUTPUT)"
+              "message": "@GETDATE('YYYY-MM-DD HH:mm:ss') END: PROCESS @GV(PROCESS_ID)\nDATA_OUTPUT:@GV(PROCESS_EXEC_DATA_OUTPUT)"
             }
           ]
         }

@@ -1,6 +1,6 @@
 {
   "name": "@runnerty/executor-excel2csv",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Runnerty module: excel2csv executor",
   "author": "Runnerty Tech",
   "license": "MIT",
