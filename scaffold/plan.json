@@ -1,0 +1,51 @@
+{
+  "$schema": "https://raw.githubusercontent.com/runnerty/schemas/master/schemas/3.2/plan.json",
+  "chains": [
+    {
+      "id": "CHAIN_EXCEL2CSV_SAMPLES",
+      "name": "Excel (XLSX) to CSV - Executor Samples",
+      "defaults_processes": {
+        "notifications": {
+          "on_start": [
+            {
+              "id": "console_default",
+              "message": "@GETDATE('YYYY-MM-DD HH:mm:ss') START: PROCESS @GV(PROCESS_ID)"
+            }
+          ],
+          "on_fail": [
+            {
+              "id": "console_default",
+              "message": "@GETDATE('YYYY-MM-DD HH:mm:ss') ERROR: PROCESS @GV(PROCESS_ID): @GV(PROCESS_EXEC_ERR_OUTPUT)",
+              "mode": "error"
+            }
+          ],
+          "on_end": [
+            {
+              "id": "console_default",
+              "message": "@GETDATE('YYYY-MM-DD HH:mm:ss') END: PROCESS @GV(PROCESS_ID)\nCOUNTROWS: @GV(PROCESS_EXEC_DB_COUNTROWS)\nAFFECTEDROWS: @GV(PROCESS_EXEC_DB_AFFECTEDROWS)\nFIRSTROW_NAME:@GV(PROCESS_EXEC_DB_FIRSTROW_NAME)\nDATA_OUTPUT:@GV(PROCESS_EXEC_DATA_OUTPUT)"
+            }
+          ]
+        }
+      },
+      "processes": [
+        {
+          "id": "SIMPLE_EXCEL2CSV",
+          "name": "Simple excel to CSV",
+          "exec": {
+            "id": "excel2csv_default",
+            "inputPath": "./xlsx/test.xlsx",
+            "outputPath": "./test_output.csv",
+            "options": {
+              "sheetName": "SHEET_ONE",
+              "dateFormat": "DD/MM/YYYY",
+              "formatterOptions": {
+                "quote": "'",
+                "delimiter": ";"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@runnerty/executor-excel2csv",
+  "version": "3.0.0",
+  "description": "Runnerty module: excel2csv executor",
+  "author": "Runnerty Tech",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint '**/*.js' && prettier --check '**'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/runnerty/executor-excel2csv.git"
+  },
+  "keywords": [
+    "runnerty",
+    "executor",
+    "excel2csv",
+    "excel",
+    "xlsx",
+    "csv"
+  ],
+  "bugs": {
+    "url": "https://github.com/runnerty/executor-excel2csv/issues"
+  },
+  "homepage": "https://github.com/runnerty/executor-excel2csv#readme",
+  "dependencies": {
+    "@runnerty/module-core": "~3.0.5",
+    "exceljs": "~4.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.1"
+  }
+}

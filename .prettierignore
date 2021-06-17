@@ -1,0 +1,12 @@
+node_modules
+.eslintignore
+.gitignore
+.prettierignore
+*.spec.js
+.npmignore
+LICENSE
+*.png
+*.txt
+*.xlsx
+TODO
+.DS_Store

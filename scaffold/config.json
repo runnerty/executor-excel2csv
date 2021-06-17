@@ -1,0 +1,8 @@
+{
+  "executors": [
+    {
+      "id": "excel2csv_default",
+      "type": "@runnerty-executor-excel2csv"
+    }
+  ]
+}

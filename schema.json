@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "@runnerty-executor-excel2csv",
+  "definitions": {
+    "config": {
+      "type": "object",
+      "required": ["id", "type"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "pattern": "@runnerty-executor-excel2csv"
+        }
+      }
+    },
+    "params": {
+      "type": "object",
+      "required": ["id", "outputPath", "inputPath"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "inputPath": {
+          "type": "string"
+        },
+        "outputPath": {
+          "type": "string"
+        },
+        "options": {
+          "type": "object",
+          "properties": {
+            "dateFormat": {
+              "type": "string"
+            },
+            "dateUTC": {
+              "type": "boolean"
+            },
+            "includeEmptyRows": {
+              "type": "boolean"
+            },
+            "sheetName": {
+              "type": "string"
+            },
+            "sheetId": {
+              "type": "number"
+            },
+            "formatterOptions": {
+              "type": "object",
+              "properties": {
+                "headers": {
+                  "type": ["boolean", "array"]
+                },
+                "alwaysWriteHeaders": {
+                  "type": "boolean"
+                },
+                "delimiter": {
+                  "type": "string"
+                },
+                "rowDelimiter": {
+                  "type": "string"
+                },
+                "quote": {
+                  "type": "string"
+                },
+                "quoteColumns": {
+                  "type": ["boolean", "string"]
+                },
+                "quoteHeaders": {
+                  "type": ["boolean", "string"]
+                },
+                "escape": {
+                  "type": "string"
+                },
+                "includeEndRowDelimiter": {
+                  "type": "boolean"
+                },
+                "writeBOM": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
