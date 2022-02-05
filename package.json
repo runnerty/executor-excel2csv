@@ -1,6 +1,6 @@
 {
   "name": "@runnerty/executor-excel2csv",
-  "version": "3.0.2",
+  "version": "3.1.0",
   "description": "Runnerty module: excel2csv executor",
   "author": "Runnerty Tech",
   "license": "MIT",
@@ -26,11 +26,11 @@
   },
   "homepage": "https://github.com/runnerty/executor-excel2csv#readme",
   "dependencies": {
-    "@runnerty/module-core": "~3.0.8",
+    "@runnerty/module-core": "~3.1.0",
     "exceljs": "~4.3.0"
   },
   "devDependencies": {
-    "eslint": "^8.7.0",
+    "eslint": "^8.8.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1"
